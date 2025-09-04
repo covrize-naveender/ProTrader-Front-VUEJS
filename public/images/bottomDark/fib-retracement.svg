@@ -1,0 +1,9 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Horizontal lines -->
+  <path d="M4 4H16" stroke="#535862" stroke-width="2" stroke-linecap="round"/>
+  <path d="M4 10H16" stroke="#535862" stroke-width="2" stroke-linecap="round"/>
+  <path d="M4 16H16" stroke="#535862" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Diagonal line -->
+  <path d="M16 4L4 16" stroke="#535862" stroke-width="2" stroke-linecap="round"/>
+</svg>

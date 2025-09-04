@@ -1,0 +1,50 @@
+﻿#  Template NodeJS build
+
+#  This template allows you to validate your NodeJS code.
+#  The workflow allows running tests and code linting on the default branch.
+
+image: node:16
+
+pipelines:
+  branches:
+    deployment:
+      - step:
+          name: Build and Test
+          # name: Test SSH
+          caches:
+            - node
+          script:
+            # - ssh -i /opt/atlassian/pipelines/agent/ssh/id_rsa -p 33548 root@139.180.180.87 'sh ./updateApi.sh'
+            # - echo 'Updated Api'
+            - yarn
+            - yarn build
+          artifacts:
+            - dist/**
+      - step:
+          name: Deploying
+          deployment: staging
+          #     # trigger: manual
+          #     # clone:
+          #       # enabled: false
+          script:
+            - ls -al
+            - pipe: atlassian/sftp-deploy:0.5.11
+              variables:
+                USER: 'root'
+                SERVER: '139.180.181.26'
+                REMOTE_PATH: '/var/www/protrader/html' # /var/www/protrader/html
+                LOCAL_PATH: 'dist' # Optional.
+                # PASSWORD: $PT_PASSWORD # Optional.
+                EXTRA_ARGS: '-oPort=33548 -P 33548' # Optional.
+                DEBUG: 'true'
+#      - step:
+#          name: Verify Deployment On Remote
+#          script:
+#            - pipe: atlassian/ssh-run:0.4.1
+#              variables:
+#                SSH_USER: 'root'
+#                SERVER: '207.148.85.228'
+#                #                PASSWORD: $PASSWORD_26
+#                PORT: '33548'
+#                MODE: 'command'
+#                COMMAND: 'sh ./mapapp.sh'

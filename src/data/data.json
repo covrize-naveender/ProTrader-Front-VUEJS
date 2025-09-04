@@ -1,0 +1,25 @@
+{
+  "chart": {
+    "type": "Candles",
+    "indexSrc": "data",
+    "data": [],
+    "tf": "1D",
+    "settings": {
+      "color": "#1baddd",
+      "showVolume": true
+    },
+    "grid": {}
+  },
+  "onchart": [{
+    "name": "CurrentCandle",
+    "type": "Splitters",
+    "data": [
+      [1588780800000]
+    ],
+    "settings": {
+      "legend": false,
+      "lineColor": "#79999e42",
+      "lineWidth": 2
+    }
+  }]
+}

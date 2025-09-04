@@ -1,0 +1,15 @@
+<template>
+  <!-- <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+    <path
+      stroke="currentColor"
+      d="M4 13h5v1H4v-1zM12 13h5v1h-5v-1zM20 13h5v1h-5v-1z"
+    ></path>
+  </svg> -->
+  <img src="../../assets/toolSettings/DashedLine.svg" alt="Dashed Line" />
+</template>
+
+<script>
+export default {
+  name: 'DashedLine'
+}
+</script>

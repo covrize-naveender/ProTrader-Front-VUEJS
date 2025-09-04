@@ -1,0 +1,26 @@
+{
+    "include": [
+        ".src/**/*.js",
+        ".src/**/*.vue",
+        ".src/**/*.json"
+    ],
+    "exclude": [
+        "node_modules/**/*"
+    ],
+    "compilerOptions": {
+        "baseUrl": ".",
+        "target": "es2015",
+        "module": "esnext",
+        "paths": {
+            "@/*": [".src/*"],
+            "Components/*": [".src/components/*"],
+            "BaseComponents/*": [".src/baseComponents/*"],
+            "Overlays/*": [".src/overlays/*"],
+            "Tools/*": [".src/overlays/tools/*"],
+            "Indicators/*": [".src/overlays/indicators/*"],
+            "ChartTypes/*": [".src/overlays/chartTypes/*"],
+            "Data/*": [".src/data/*"],
+            "Utils/*": [".src/utils/*"]
+        }
+    }
+}

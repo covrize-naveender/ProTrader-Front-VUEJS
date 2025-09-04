@@ -1,0 +1,8 @@
+VUE_APP_USER_API= "http://localhost:9090"
+#VUE_APP_USER_API= "https://webapi-stg.protrader.com.au"
+VUE_APP_CORE = "https://core.protrader.com.au/api/v1"
+# VUE_APP_CORE = "http://localhost:5000/api/v1"
+VUE_APP_MONTHLY_PRICE="price_1REVCeG6YGnUUug3YWcYpehu"
+VUE_APP_YEARLY_PRICE="price_1REVCLG6YGnUUug31lRWODsg"
+VUE_APP_MONTHLY_BASIC_PRICE="price_1REVFQG6YGnUUug3sZ8TjMqH"
+VUE_APP_YEARLY_BASIC_PRICE="price_1REVDVG6YGnUUug3N4M6mmnt"

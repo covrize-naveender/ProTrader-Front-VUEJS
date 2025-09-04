@@ -1,0 +1,244 @@
+/* Tool Settings */
+.solidLine .p-menuitem-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    -webkit-mask: url('./assets/toolSettings/SolidLine.svg') no-repeat center;
+    mask: url('./assets/toolSettings/SolidLine.svg') no-repeat center;
+}
+
+.dashedLine .p-menuitem-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    -webkit-mask: url('./assets/toolSettings/DashedLine.svg') no-repeat center;
+    mask: url('./assets/toolSettings/DashedLine.svg') no-repeat center;
+}
+
+.dottedLine .p-menuitem-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    -webkit-mask: url('./assets/toolSettings/DottedLine.svg') no-repeat center;
+    mask: url('./assets/toolSettings/DottedLine.svg') no-repeat center;
+}
+
+.arrowLine .p-menuitem-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    -webkit-mask: url('./assets/toolSettings/ArrowLine.svg') no-repeat center;
+    mask: url('./assets/toolSettings/ArrowLine.svg') no-repeat center;
+}
+
+
+/* Customm-chart-type */
+
+.custom-btn-secondary.Bars,
+.Bars .p-menuitem-icon {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    -webkit-mask: url('./assets/chartType/bar.svg') no-repeat center;
+    mask: url('./assets/chartType/bar.svg') no-repeat center;
+}
+
+.custom-btn-secondary.LineChart,
+.LineChart .p-menuitem-icon {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    -webkit-mask: url('./assets/chartType/line-data.svg') no-repeat center;
+    mask: url('./assets/chartType/line-data.svg') no-repeat center;
+}
+
+.custom-btn-secondary.Candles,
+.Candles .p-menuitem-icon {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    -webkit-mask: url('./assets/chartType/candle.svg') no-repeat center;
+    mask: url('./assets/chartType/candle.svg') no-repeat center;
+}
+
+.custom-btn-secondary.Kagi,
+.Kagi .p-menuitem-icon {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    -webkit-mask: url('./assets/chartType/kagi.svg') no-repeat center;
+    mask: url('./assets/chartType/kagi.svg') no-repeat center;
+}
+
+.custom-btn-secondary.HeikenAshi,
+.HeikenAshi .p-menuitem-icon {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    -webkit-mask: url('./assets/chartType/heiken-ashi.svg') no-repeat center;
+    mask: url('./assets/chartType/heiken-ashi.svg') no-repeat center;
+}
+
+.custom-btn-secondary.UpAndDown,
+.UpAndDown .p-menuitem-icon {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    -webkit-mask: url('./assets/chartType/up-down.svg') no-repeat center;
+    mask: url('./assets/chartType/up-down.svg') no-repeat center;
+}
+
+.custom-btn-secondary.PnF,
+.PnF .p-menuitem-icon {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    -webkit-mask: url('./assets/chartType/point-figure.svg') no-repeat center;
+    mask: url('./assets/chartType/point-figure.svg') no-repeat center;
+}
+
+.custom-btn-secondary.BarTrend,
+.BarTrend .p-menuitem-icon {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    -webkit-mask: url('./assets/chartType/bar-trend.svg') no-repeat center;
+    mask: url('./assets/chartType/bar-trend.svg') no-repeat center;
+}
+
+.custom-btn-secondary.CompareChartMain,
+.CompareChartMain .p-menuitem-icon {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    -webkit-mask: url('./assets/chartType/compare.svg') no-repeat center;
+    mask: url('./assets/chartType/compare.svg') no-repeat center;
+}
+
+
+/* Chart Layout Icons */
+
+.custom-btn-secondary.one-tab,
+.one-tab .p-menuitem-icon {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    -webkit-mask: url('./assets/layouts/layout_1tab.svg') no-repeat center;
+    mask: url('./assets/layouts/layout_1tab.svg') no-repeat center;
+}
+
+.custom-btn-secondary.two-tab-h,
+.two-tab-h .p-menuitem-icon {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    -webkit-mask: url('./assets/layouts/layout_2tab_1.svg') no-repeat center;
+    mask: url('./assets/layouts/layout_2tab_1.svg') no-repeat center;
+}
+
+.custom-btn-secondary.two-tab-v,
+.two-tab-v .p-menuitem-icon {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    -webkit-mask: url('./assets/layouts/layout_2tab_2.svg') no-repeat center;
+    mask: url('./assets/layouts/layout_2tab_2.svg') no-repeat center;
+}
+
+.custom-btn-secondary.three-tab-h,
+.three-tab-h .p-menuitem-icon {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    -webkit-mask: url('./assets/layouts/layout_3tab_1.svg') no-repeat center;
+    mask: url('./assets/layouts/layout_3tab_1.svg') no-repeat center;
+}
+
+.custom-btn-secondary.three-tab-v-h,
+.three-tab-v-h .p-menuitem-icon {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    -webkit-mask: url('./assets/layouts/layout_3tab_2.svg') no-repeat center;
+    mask: url('./assets/layouts/layout_3tab_2.svg') no-repeat center;
+}
+
+.custom-btn-secondary.three-tab-h-v,
+.three-tab-h-v .p-menuitem-icon {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    -webkit-mask: url('./assets/layouts/layout_3tab_3.svg') no-repeat center;
+    mask: url('./assets/layouts/layout_3tab_3.svg') no-repeat center;
+}
+
+.custom-btn-secondary.four-tab,
+.four-tab .p-menuitem-icon {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    -webkit-mask: url('./assets/layouts/layout_4tab.svg') no-repeat center;
+    mask: url('./assets/layouts/layout_4tab.svg') no-repeat center;
+}
+.custom-btn-secondary.save-layout,
+.save-layout .p-menuitem-icon {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    -webkit-mask: url('./assets/layouts/save.svg') no-repeat center;
+    mask: url('./assets/layouts/save.svg') no-repeat center;
+}
+
+
+/* other svgs */
+.custom-btn-primary.Rocket,
+.Rocket .p-menuitem-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    -webkit-mask: url('./assets/buttonsSvg/rocket.svg') no-repeat center;
+    mask: url('./assets/buttonsSvg/rocket.svg') no-repeat center;
+}
+
+.custom-btn-fill.UserCircle {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    -webkit-mask: url('./assets/buttonsSvg/userCircle.svg') no-repeat center;
+    mask: url('./assets/buttonsSvg/userCircle.svg') no-repeat center;
+}
+.custom-btn-secondary.TrainingMode,
+.TrainingMode .p-menuitem-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    -webkit-mask: url('./assets/buttonsSvg/trainingMode.svg') no-repeat center;
+    mask: url('./assets/buttonsSvg/trainingMode.svg') no-repeat center;
+}
+
+.custom-btn-secondary.play-forward-btn,
+.custom-btn-primary.play-forward-btn{
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    -webkit-mask: url('./assets/autoplay/playForward.svg') no-repeat center;
+    mask: url('./assets/autoplay/playForward.svg') no-repeat center;
+}
+
+.custom-btn-secondary.play-backward-btn,
+.custom-btn-primary.play-backward-btn{
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    -webkit-mask: url('./assets/autoplay/playBackward.svg') no-repeat center;
+    mask: url('./assets/autoplay/playBackward.svg') no-repeat center;
+}
+
+.custom-btn-secondary.pause-btn,
+.custom-btn-primary.pause-btn{
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    -webkit-mask: url('./assets/autoplay/pause.svg') no-repeat center;
+    mask: url('./assets/autoplay/pause.svg') no-repeat center;
+}

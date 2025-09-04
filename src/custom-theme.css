@@ -1,0 +1,931 @@
+/* theme.css */
+/* Light Theme */
+:root {
+
+    /* primary color */
+    --primary-color: #F20E17;
+    --primary-hover-color: color-mix(in srgb, var(--primary-color) 80%, transparent);
+    --primary-opacity-color: color-mix(in srgb, var(--primary-color) 10%, transparent);
+
+    /* Theme colors */
+    --card-background: #F5F5F5;
+    --background-color: color-mix(in srgb, var(--card-background) 10%, white);
+    --border-color: #d5d7da;
+    --item-selected: #E9EAEB;
+
+    /* text colors */
+    --text-color: #000000;
+    --text-invert-color: #ffffff;
+
+    /* tool colors */
+    --tool-background: #ffffff;
+    --tool-text-color: #000000;
+    --tool-hover-bgcolor: #e9ecef;
+    --tool-hover-text-color: #495057;
+
+
+    /* secondary colors */
+    --secondary-color: #414651;
+    --secondary-hover-color: color-mix(in srgb, var(--secondary-color) 95%, transparent);
+    --secondary-opacity-color: color-mix(in srgb, var(--secondary-color) 20%, transparent);
+    --secondary-card-color: var(--secondary-color);
+
+    /* Scrollbar colors */
+    --scrollbar-bg: #eee;
+    --scrollbar-thumb: #bebfc0;
+    --scrollbar-thumb-hover: rgb(112, 112, 112);
+    --scrollbar-thumb-active: rgb(128, 128, 128);
+    --scrollbar-button-color: rgb(112, 112, 112);
+    --scrollbar-button-hover-color: rgb(112, 112, 112);
+    --scrollbar-button-active-color: rgb(128, 128, 128);
+}
+
+/* Dark Theme */
+.dark-theme {
+
+    /* primary color */
+    --primary-color: #64E639;
+    --primary-hover-color: color-mix(in srgb, var(--primary-color) 80%, transparent);
+    --primary-opacity-color: color-mix(in srgb, var(--primary-color) 10%, transparent);
+
+    /* Theme colors */
+    --card-background: #1e1e1e;
+    --background-color: color-mix(in srgb, var(--card-background) 50%, black);
+    --border-color: #333333;
+    --item-selected: #505050;
+
+    /* text colors */
+    --text-color: #A5A9B2;
+    --text-invert-color: #000000;
+
+    /* tool colors */
+    --tool-background: #505050;
+    --tool-text-color: #A2A2A2;
+    --tool-hover-bgcolor: #0000000d;
+    --tool-hover-text-color: #e9e4e4;
+
+    /* secondary colors */
+    --secondary-color: #727980;
+    --secondary-hover-color: color-mix(in srgb, var(--secondary-color) 85%, transparent);
+    --secondary-opacity-color: color-mix(in srgb, var(--secondary-color) 20%, transparent);
+    --secondary-card-color: #F5F5F5;
+
+    /* Scrollbar colors */
+    --scrollbar-bg: #333;
+    --scrollbar-thumb: #505050;
+    --scrollbar-thumb-hover: #646464;
+    --scrollbar-thumb-active: #787878;
+    --scrollbar-button-color: #646464;
+    --scrollbar-button-hover-color: #787878;
+    --scrollbar-button-active-color: #8c8c8c;
+}
+
+/* Grey Theme */
+.grey-theme {
+
+    /* primary color */
+    --primary-color: #2196f3;
+    --primary-hover-color: color-mix(in srgb, var(--primary-color) 80%, transparent);
+    --primary-opacity-color: color-mix(in srgb, var(--primary-color) 10%, transparent);
+
+    /* Theme colors */
+    --card-background: #dedfdf;
+    --background-color: #f2f2f2;
+    --border-color: #c3c4c4;
+    --item-selected: #A2A2A2;
+
+    /* text colors */
+    --text-color: #5a5a5b;
+    --text-invert-color: #000000;
+}
+
+.custom-theme {
+
+    /* primary color */
+    --primary-color: #F20E17;
+    --primary-hover-color: color-mix(in srgb, var(--primary-color) 80%, transparent);
+    --primary-opacity-color: color-mix(in srgb, var(--primary-color) 10%, transparent);
+
+    /* Theme colors */
+    --card-background: #F5F5F5;
+    --background-color: color-mix(in srgb, var(--card-background) 50%, white);
+    --border-color: var(--card-background);
+    --item-selected: color-mix(in srgb, var(--card-background) 70%, white);
+
+    /* text colors */
+    --text-color: #000000;
+    --text-invert-color: #ffffff;
+
+    /* tool colors */
+    --tool-background: color-mix(in srgb, var(--card-background) 15%, white);
+    --tool-text-color: var(--text-color);
+    --tool-hover-bgcolor: color-mix(in srgb, var(--card-background) 30%, white);
+    --tool-hover-text-color: color-mix(in srgb, var(--text-color) 80%, black);
+    ;
+    ;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.p-button {
+    color: var(--text-invert-color);
+    background-color: var(--primary-color);
+    border-color: var(--border-color);
+    border-radius: 6px;
+}
+
+.p-button:enabled:hover {
+    color: var(--text-invert-color);
+    background-color: var(--primary-hover-color);
+    border-color: var(--primary-hover-color);
+}
+
+.p-button:enabled:focus {
+    box-shadow: none;
+}
+
+/* Text button */
+.p-button.p-button-text {
+    color: var(--primary-color);
+    background-color: transparent;
+    border: none;
+}
+
+.p-button.p-button-text:enabled:hover {
+    color: var(--primary-color);
+    background-color: var(--primary-opacity-color);
+    border-color: var(--primary-hover-color);
+}
+
+/* Light button */
+.p-button.p-button-light {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background-color: transparent;
+}
+
+.p-button.p-button-light:enabled:hover {
+    color: var(--primary-color);
+    background-color: transparent;
+    border-color: var(--primary-color);
+}
+
+/* Outline button */
+.p-button.p-button-outlined {
+    color: var(--primary-color);
+    background-color: transparent;
+    border-color: var(--border-color);
+}
+
+.p-button.p-button-outlined:enabled:hover {
+    color: var(--primary-hover-color);
+    border-color: var(--border-color);
+}
+
+/* Secondary button */
+.p-button.p-button-secondary {
+    color: white;
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.p-button.p-button-secondary:enabled:hover {
+    color: white;
+    background-color: var(--secondary-hover-color);
+    border-color: var(--secondary-hover-color);
+}
+
+.p-button.p-button-secondary:enabled:focus {
+    box-shadow: none;
+}
+
+/* secondary outlined button  */
+.p-button.p-button-secondary.p-button-outlined {
+    color: var(--secondary-color);
+    background-color: transparent;
+    border-color: var(--border-color);
+}
+
+.p-button.p-button-secondary.p-button-outlined:enabled:hover {
+    color: var(--secondary-hover-color);
+    border-color: var(--border-color);
+}
+
+/* secondary light button */
+.p-button.p-button-secondary.p-button-light {
+    color: var(--secondary-color);
+    background-color: var(--secondary-opacity-color);
+    border: none;
+}
+
+.p-button.p-button-secondary.p-button-light:enabled:hover {
+    color: var(--secondary-color);
+    background-color: color-mix(in srgb, var(--secondary-color) 30%, transparent);
+    border: none;
+}
+
+/* collpase button */
+.p-button.collapse-btn {
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.p-button.collapse-btn:enabled:hover {
+    background-color: var(--background-color);
+    color: var(--secondary-hover-color);
+    border-color: var(--secondary-hover-color);
+}
+
+/* Left sidebar button */
+.p-button.left-sidebar-bottom-btn {
+    background-color: var(--card-background);
+    color: var(--text-color);
+    border: none;
+}
+
+.p-button.left-sidebar-bottom-btn:enabled:hover {
+    background-color: var(--card-background);
+    color: var(--text-color);
+    border: none;
+}
+
+
+.p-selectbutton .p-button.p-highlight {
+    background-color: var(--secondary-color);
+    color: var(--text-invert-color);
+    border-color: var(--secondary-color);
+}
+
+.p-selectbutton .p-button.p-highlight:hover {
+    background-color: var(--secondary-hover-color);
+    color: var(--text-invert-color);
+    border-color: var(--secondary-color);
+}
+
+
+.main-content-block {
+    background-color: var(--background-color);
+    border-top: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.company-title {
+    border-top: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    background-color: var(--background-color);
+}
+
+.comapnyDtlStyle {
+    /* border-top: 1px solid var(--border-color); */
+    border-right: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    background-color: var(--background-color);
+}
+
+.ohlcvStyle {
+    border-bottom: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    background-color: var(--background-color);
+}
+
+.left-sidemenu,
+.side-bar-cardStyle {
+    border: 1px solid var(--border-color);
+    background-color: var(--background-color);
+}
+
+.side-bar-cardStyle.intraday-cardStyle.intraday-on {
+    background-color: var(--primary-color);
+    border-color: var(--border-color);
+}
+
+.side-bar-cardStyle.intraday-cardStyle.intraday-off {
+    background-color: var(--secondary-card-color);
+    border-color: var(--border-color);
+}
+
+.intraday-cardStyle .right-tool-title-text {
+    color: var(--text-invert-color);
+}
+
+.side-bar-cardStyle.intraday-cardStyle .p-inputswitch.p-inputswitch-checked .p-inputswitch-slider,
+.side-bar-cardStyle.intraday-cardStyle .p-inputswitch.p-inputswitch-checked:not(.p-disabled):hover .p-inputswitch-slider {
+    background-color: var(--background-color);
+}
+
+.side-bar-cardStyle.intraday-cardStyle .p-inputswitch.p-inputswitch-checked .p-inputswitch-slider:before {
+    background-color: var(--primary-color);
+}
+
+.side-bar-cardStyle.intraday-cardStyle .p-inputswitch.p-focus .p-inputswitch-slider {
+    box-shadow: none
+}
+
+.my-custom-switch .p-inputswitch.p-inputswitch-checked .p-inputswitch-slider,
+.my-custom-switch .p-inputswitch.p-inputswitch-checked:not(.p-disabled):hover .p-inputswitch-slider {
+    background-color: var(--primary-color);
+}
+
+/* 
+
+.my-custom-switch .p-inputswitch.p-inputswitch-checked .p-inputswitch-slider:before {
+    background-color: var(--primary-color);
+}
+
+.my-custom-switch .p-inputswitch.p-focus .p-inputswitch-slider {
+    box-shadow: none
+} */
+
+.p-dialog .p-dialog-header,
+.p-dialog .p-dialog-footer,
+.scan_leftMenuStyle,
+.p-listbox .p-listbox-list .p-listbox-item {
+    background-color: var(--card-background);
+    /* box-shadow: 0 2px 4px #0006; */
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+.p-dialog .p-dialog-header {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.p-dialog .p-dialog-footer {
+    border-top: 1px solid var(--border-color);
+}
+
+/* Shruti's work */
+
+.left-sidebar-item,
+.left-sidebar-drp-btn,
+.left-sidebar-drp-icon {
+    background-color: var(--card-background);
+    color: var(--text-color);
+}
+
+.right-tool-title-text {
+    color: var(--text-color);
+}
+
+.content-indicator,
+.scan_contentBodyStyle {
+    background-color: var(--background-color);
+}
+
+.p-dialog .p-dialog-content,
+.p-panel .p-panel-content {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.scan_leftMenuStyle,
+.indicator-accordian,
+.filter-accordian,
+.exchange-accordian {
+    border-right: 1px solid var(--border-color);
+    background-color: var(--card-background);
+}
+
+.p-accordion .p-accordion-content {
+    border-color: var(--border-color);
+}
+
+.p-accordion .p-accordion-header .p-accordion-header-link,
+.p-accordion .p-accordion-header:not(.p-disabled).p-highlight .p-accordion-header-link {
+    background-color: var(--card-background);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+.p-accordion .p-accordion-header:not(.p-disabled).p-highlight:hover .p-accordion-header-link,
+.p-accordion .p-accordion-header:not(.p-highlight):not(.p-disabled):hover .p-accordion-header-link {
+    background-color: var(--card-background);
+    color: var(--text-color);
+}
+
+.p-accordion.scan-content-accordian .p-accordion-content {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.p-datatable .p-datatable-thead>tr>th {
+    background-color: var(--card-background);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+.p-datatable .p-datatable-tbody>tr {
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+}
+
+.p-datatable .p-datatable-tbody>tr>td {
+    border-color: var(--border-color);
+}
+
+.p-tabview .p-tabview-panels,
+.p-tabview .p-tabview-nav,
+.p-tabview .p-tabview-nav li .p-tabview-nav-link,
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link,
+.p-tabview .p-tabview-nav li:not(.p-highlight):not(.p-disabled):hover .p-tabview-nav-link {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+    border-top: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+}
+
+.solidLine .p-menuitem-icon,
+.dashedLine .p-menuitem-icon,
+.dottedLine .p-menuitem-icon,
+.arrowLine .p-menuitem-icon {
+    background-color: var(--tool-text-color);
+}
+
+.custom-btn-secondary:not(.not-outlined) {
+    background-color: var(--secondary-color);
+}
+
+.custom-btn-secondary.not-outlined {
+    background-color: var(--text-invert-color);
+}
+
+.custom-btn-primary {
+    background-color: var(--primary-color);
+}
+
+.custom-btn-fill {
+    background-color: var(--text-invert-color);
+}
+
+.custom-menu-topbar.p-menu .p-menuitem-link .p-menuitem-icon {
+    color: var(--text-color);
+}
+
+.custom-menu-topbar.p-menu .p-menuitem.svg-icon:not(.selected-menu-item) .p-menuitem-icon {
+    background-color: var(--tool-text-color);
+}
+
+.p-menu.p-menu-overlay,
+.custom-menu-topbar.p-menu,
+.tool-menu.p-menu {
+    background-color: var(--tool-background);
+}
+
+.p-menu.p-menu-overlay .p-menuitem:not(.selected-menu-item) .p-menuitem-link .p-menuitem-text,
+.custom-menu-topbar.p-menu .p-menuitem:not(.selected-menu-item) .p-menuitem-link .p-menuitem-text,
+.tool-menu.p-menu .p-menuitem-link .p-menuitem-text {
+    color: var(--tool-text-color);
+}
+
+.selected-menu-item .p-menuitem-icon {
+    background-color: var(--primary-color);
+}
+
+.p-menu.p-menu-overlay .p-menuitem.selected-menu-item .p-menuitem-link .p-menuitem-text,
+.custom-menu-topbar.p-menu .p-menuitem.selected-menu-item .p-menuitem-link .p-menuitem-text {
+    color: var(--primary-color);
+}
+
+.custom-menu-topbar.p-menu .p-menuitem-link:not(.p-disabled):hover,
+.p-menu.p-menu-overlay .p-menuitem-link:not(.p-disabled):hover,
+.tool-menu.p-menu .p-menuitem-link:not(.p-disabled):hover {
+    background-color: var(--tool-hover-bgcolor);
+}
+
+.custom-menu-topbar.p-menu .p-menuitem.activeTrainingItem .p-menuitem-link:not(.p-disabled):hover {
+    background-color: var(--primary-hover-color);
+}
+
+.custom-menu-topbar.p-menu .p-menuitem:not(.selected-menu-item) .p-menuitem-link:not(.p-disabled):hover .p-menuitem-text,
+.tool-menu.p-menu .p-menuitem-link:not(.p-disabled):hover .p-menuitem-text {
+    color: var(--tool-hover-text-color);
+}
+
+.svg-icon-button {
+    background-color: var(--primary-color);
+}
+
+.p-listbox.drp-drawing {
+    background-color: var(--background-color);
+    border-color: var(--border-color);
+}
+
+.p-listbox.drp-drawing .p-listbox-list .p-listbox-item {
+    background-color: var(--background-color);
+}
+
+.emoji-mart,
+.emoji-mart-category-label span {
+    background-color: var(--card-background) !important;
+    color: var(--text-color) !important;
+    border-color: var(--border-color) !important;
+}
+
+.loader_bg .p-blockui.p-component-overlay {
+    background-color: color-mix(in srgb, var(--background-color) 80%, transparent);
+}
+
+.p-checkbox:not(.stdCheckbox) .p-checkbox-box.p-highlight {
+    background-color: var(--background-color);
+    border-color: var(--primary-color);
+}
+
+.p-checkbox:not(.stdCheckbox) .p-checkbox-box {
+    background-color: var(--background-color);
+    border-color: var(--border-color);
+}
+
+.p-checkbox:not(.stdCheckbox) .p-checkbox-box .p-checkbox-icon {
+    color: var(--primary-color);
+}
+
+.p-checkbox:not(.p-checkbox-disabled, .stdCheckbox) .p-checkbox-box:hover,
+.p-checkbox:not(.p-checkbox-disabled, .stdCheckbox) .p-checkbox-box.p-highlight:hover {
+    border-color: var(--primary-hover-color);
+    background-color: var(--background-color);
+}
+
+.p-checkbox:not(.p-checkbox-disabled, .stdCheckbox) .p-checkbox-box.p-focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+.p-listbox .p-listbox-list .p-listbox-item.p-highlight,
+.p-datatable .p-datatable-tbody>tr.p-highlight {
+    background-color: var(--item-selected);
+    color: var(--text-color);
+}
+
+.p-listbox:not(.p-disabled) .p-listbox-item:not(.p-highlight):not(.p-disabled):hover,
+.p-datatable.p-datatable-hoverable-rows .p-datatable-tbody>tr:not(.p-highlight):hover,
+.p-datatable .p-sortable-column:not(.p-highlight):hover,
+.p-datatable .p-sortable-column.p-highlight:hover {
+    background-color: color-mix(in srgb, var(--item-selected) 80%, transparent);
+    color: var(--text-color);
+}
+
+.p-datatable.p-datatable-hoverable-rows .p-datatable-tbody>tr:not(.p-highlight):hover,
+.p-datatable .p-sortable-column:not(.p-highlight):hover {
+    color: var(--text-color);
+}
+
+.p-datatable .p-sortable-column.p-highlight {
+    background-color: var(--item-selected);
+}
+
+.p-datatable .p-sortable-column.p-highlight,
+.p-datatable .p-sortable-column.p-highlight:hover,
+.p-datatable .p-sortable-column.p-highlight .p-sortable-column-icon,
+.p-datatable .p-sortable-column.p-highlight:hover .p-sortable-column-icon {
+    color: var(--primary-color);
+}
+
+.p-datatable .p-sortable-column:focus {
+    box-shadow: none;
+}
+
+.p-datatable .p-datatable-tbody>tr:focus {
+    outline: none;
+}
+
+.p-dialog .p-dialog-header .p-dialog-header-icon:enabled:hover {
+    background-color: var(--item-selected);
+    color: var(--text-color);
+}
+
+.p-steps .p-steps-item .p-menuitem-link {
+    background-color: transparent;
+}
+
+.p-steps .p-steps-item.p-highlight .p-steps-title {
+    color: var(--text-color);
+}
+
+.p-steps .p-steps-item.p-highlight .p-steps-number {
+    color: var(--text-color);
+    background-color: var(--card-background);
+}
+
+.settings-container .setting-item:not(:last-of-type) {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.p-grid.setting-item-plus-chart {
+    border-top: 1px solid var(--border-color);
+}
+
+.p-dropdown,
+.p-dropdown-panel {
+    background-color: var(--tool-background);
+    border-color: var(--border-color);
+}
+
+.p-dropdown .p-dropdown-label {
+    color: var(--text-color) !important;
+}
+
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item {
+    color: var(--text-color);
+}
+
+.trailing-dropdown {
+    background-color: var(--primary-color);
+}
+
+.p-inputtext {
+    background-color: var(--tool-background);
+    color: var(--tool-text-color);
+    border-color: var(--border-color);
+    box-shadow: inset 0 0 0 0 transparent;
+}
+
+.p-inputtext:enabled:focus,
+.p-dropdown:not(.p-disabled).p-focus {
+    box-shadow: inset 0 0 0 0.1rem var(--border-color);
+}
+
+
+.autosuggest__results .autosuggest__results-item.autosuggest__results-item--highlighted {
+    background-color: var(--tool-background);
+    color: var(--tool-text-color);
+}
+
+#autosuggest div[role='combobox'] input {
+    background-color: var(--tool-background);
+}
+
+.tv-floating-toolbar__widget-wrapper,
+.tv-floating-toolbar__drag {
+    background-color: var(--tool-background);
+    border-color: var(--tool-background);
+    color: var(--tool-text-color);
+}
+
+.floating-toolbar-react-widgets .floating-toolbar-react-widgets__button {
+    background-color: var(--tool-background);
+    color: var(--tool-text-color);
+    border-color: var(--border-color);
+}
+
+.floating-toolbar-react-widgets .floating-toolbar-react-widgets__button:hover {
+    background-color: var(--tool-hover-bgcolor);
+    color: var(--tool-hover-text-color);
+}
+
+.desc-block,
+.desc-block img {
+    border: 1px solid var(--border-color);
+}
+
+.right-scan-autoplay {
+    color: var(--primary-color);
+}
+
+.vc-sketch {
+    background-color: var(--card-background) !important;
+}
+
+.p-overlaypanel {
+    background-color: var(--card-background);
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 16px;
+}
+
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-bg);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-thumb-hover);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--scrollbar-thumb-active);
+}
+
+/* Buttons */
+::-webkit-scrollbar-button:single-button {
+    background-color: var(--scrollbar-bg);
+    display: block;
+    background-size: 10px;
+    background-repeat: no-repeat;
+}
+
+/* Up */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+    height: 12px;
+    width: 5px;
+    background-position: center 4px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='var(--scrollbar-button-color)'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='var(--scrollbar-button-hover-color)'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:active {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='var(--scrollbar-button-active-color)'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+/* Down */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+    height: 12px;
+    width: 16px;
+    background-position: center 2px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='var(--scrollbar-button-color)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment:hover {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='var(--scrollbar-button-hover-color)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment:active {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='var(--scrollbar-button-active-color)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+.trading-vue-canvas {
+    background-color: var(--card-background);
+    border-top: 1px solid var(--border-color);
+}
+
+.custom-p-icon {
+    color: var(--text-invert-color);
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 50%;
+    padding: 0rem 0.25rem;
+}
+
+
+.bottom-box {
+    color: var(--text-color);
+}
+
+.bottom-divider {
+    color: var(--border-color);
+}
+
+.chart-tab {
+    border: 1px solid var(--border-color);
+}
+
+.selected-tab {
+    border: 1px solid blue;
+}
+
+.chart-bottom {
+    border-top: 1px solid var(--border-color);
+}
+
+.trading-vue-legend:not(.title-legend) {
+    background-color: color-mix(in srgb, var(--card-background) 80%, transparent);
+    /*Fixing legend width so if values are large then only cover left one*/
+    width: 50% !important;
+}
+
+#autosuggest div[role='combobox'] input {
+    border: 1px solid var(--border-color);
+}
+
+#progress-bar-container {
+    border: 1.5px solid var(--border-color);
+}
+
+.p-divider.p-divider-horizontal:before {
+    border-top: 1px solid var(--border-color);
+}
+
+.userSvgFill {
+    fill: var(--secondary-color);
+}
+
+.tvjs-x-window {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.tvjs-x-window.sett-win {
+    border: 1px solid var(--border-color);
+}
+
+.tvjs-x-window-head {
+    background-color: var(--card-background);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.tvjs-x-window-close:hover {
+    background-color: color-mix(in srgb, var(--card-background) 80%, white);
+}
+
+.activeTrainingItem {
+    background-color: var(--primary-color);
+}
+
+
+.v-step {
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+    font-size: 1.1rem;
+}
+
+.v-tour__target--highlighted {
+    border-radius: 0.5rem;
+    /* box-shadow: 0 0 0 4px rgba(255, 111, 0, 0.7) !important; */
+    box-shadow:
+        0 0 0 2px rgba(255, 111, 0, 0.9),
+        0 0 10px rgba(255, 111, 0, 0.5),
+        0 0 20px rgba(255, 111, 0, 0.3),
+        0 0 40px rgba(255, 111, 0, 0.1) !important;
+}
+
+.v-step__content {
+    max-width: 180px;
+}
+
+.p-button-tour {
+    background-color: rgba(255, 111, 0, 1);
+    border-color: rgba(255, 111, 0, 1);
+}
+
+.p-button-tour:enabled:hover {
+    background-color: color-mix(in srgb, rgba(255, 111, 0, 1) 80%, transparent);
+    border-color: color-mix(in srgb, rgba(255, 111, 0, 1) 80%, transparent);
+}
+
+.p-button-tour-skip {
+    background-color: transparent;
+    color: var(--text-color);
+    border-color: transparent;
+}
+
+.p-button-tour-skip:enabled:hover {
+    background-color: transparent;
+    color: var(--text-color);
+    border-color: var(--text-color);
+}
+
+.active-step-indicator {
+    border: 1px solid rgba(255, 111, 0, 0.9);
+    border-radius: 0.5rem;
+    box-shadow:
+        0 0 0 2px rgba(255, 111, 0, 0.9),
+        0 0 10px rgba(255, 111, 0, 0.5),
+        0 0 20px rgba(255, 111, 0, 0.3),
+        0 0 40px rgba(255, 111, 0, 0.1) !important;
+    pointer-events: none;
+}
+
+.h-splitter {
+    background-color: var(--secondary-opacity-color);
+}
+
+.floating-iframe {
+    background: var(--background-color);
+    border-color: var(--border-color) !important;
+}
+
+.chart-sidebar {
+    background-color: var(--background-color);
+}
+
+.chart-sidebar .toggle-button {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+}
+
+.chart-sidebar .toggle-button:hover {
+    background-color: var(--background-color);
+}
